@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="main-image">
+      <button onclick="prevImage()">&#10094;</button>
+      <img id="currentImage" src="images/img1.jpg" alt="Gallery Image" />
+      <button onclick="nextImage()">&#10095;</button>
+    </div>
+    <div class="thumbnails" id="thumbnailContainer">
+      <img src="images/img1.jpg" onclick="setImage(0)" />
+      <img src="images/img2.jpg" onclick="setImage(1)" />
+      <img src="images/img3.jpg" onclick="setImage(2)" />
+      <img src="images/img4.jpg" onclick="setImage(3)" />
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
